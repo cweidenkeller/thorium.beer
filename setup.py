@@ -11,7 +11,7 @@ setup(
                       'flake8==2.5.4',
                       'Flask==0.10.1',
                       'pylint==1.5.5',
-                      'tox==2.3.1',]
+                      'tox==2.3.1',],
     author="Thorium",
     author_email="info@thorium.beer",
     url="http://thorium.beer"
