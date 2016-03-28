@@ -1,4 +1,4 @@
-from flask import Flask, Blueprint
+from flask import Flask, Blueprint, redirect
 from thorium.site import site
 
 app = Flask(__name__)
