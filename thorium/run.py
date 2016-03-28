@@ -10,8 +10,8 @@ def page_not_found(error):
     return "PAGE NOT FOUND", 404
 
 @app.route('/favicon.ico', methods=['GET'])
-    def favicon():
-        return redirect(FAVICON_URL)
+def favicon():
+    return redirect(FAVICON_URL)
 
 def run():
     app.add
