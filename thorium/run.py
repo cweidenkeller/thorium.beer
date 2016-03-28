@@ -14,7 +14,6 @@ def favicon():
     return redirect(FAVICON_URL)
 
 def run():
-    app.add
     app.register_blueprint(site)
     app.debug = False
     app.run(host='0.0.0.0', port=80)
