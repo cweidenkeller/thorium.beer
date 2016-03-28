@@ -1,3 +1,5 @@
 dist/
 build/
 thorium.egg-info/
+.tox/
+*.pyc
