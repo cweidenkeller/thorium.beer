@@ -1,4 +1,4 @@
-from flask import Blueprint, render_template
+from flask import Blueprint, render_template, redirect
 
 
 site = Blueprint('thorium', __name__,
@@ -15,3 +15,8 @@ def beer(beer_name):
 @site.route('/about_us', methods=['GET'])
 def about_us():
     return render_template('about_us.html')
+
+@site.route('/survey', methods=['GET'])
+def survey():
+    return redirect('https://www.surveymonkey.com/r/2W9XQDK',
+                    code=301)
