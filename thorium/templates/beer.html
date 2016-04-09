@@ -2,7 +2,7 @@
 {% block title %}{{ beer_name }}{% endblock %}
 {% block content %}
 <div align="center">
-{% if {{ beer_name }} == "tekno_viking" %}
+{% if beer_name == "tekno_viking" %}
 <p>Name: Tekno Viking</p>
 <p>Style: Russian Imperial Stout</p>
 <p>ABV: 13%</p>
@@ -11,19 +11,19 @@
 <p>Our Flagship stout dark and roasty. This Russian Imperial Stout features
 Roasted Barley, Brown and Chocolate Malts and is hopped with Brewers Gold and Northen Brewer. A delicous beer to be shared with a robust body and dry finish.</p>
 {% endif %}
-{% elif {{ beer_name }} == "nasa" %}
+{% elif beer_name  == "nasa" %}
 {% endif %}
-{% elif {{ beer_name }} == "nagapa" %}
+{% elif {beer_name  == "nagapa" %}
 {% endif %}
-{% elif {{ beer_name }} == "reactor" %}
+{% elif beer_name  == "reactor" %}
 {% endif %}
-{% elif {{ beer_name }} == "ladybug" %}
+{% elif  beer_name  == "ladybug" %}
 {% endif %}
-{% elif {{ beer_name }} == "rye_of_rha" %}
+{% elif {beer_name  == "rye_of_rha" %}
 {% endif %}
-{% elif {{ beer_name }} == "dark_remedy" %}
+{% elif beer_name == "dark_remedy" %}
 {% endif %}
-{% elif {{ beer_name }} == "nonstickrobot" %}
+{% elif beer_name == "nonstickrobot" %}
 {% endif %}
 </div>
 {% endblock %}
