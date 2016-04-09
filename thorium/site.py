@@ -16,6 +16,10 @@ def beer(beer_name):
 def about_us():
     return render_template('about_us.html')
 
+@site.route('/contact_us', methods=['GET'])
+def contact_us():
+    return render_template('contact_us.html')
+
 @site.route('/survey', methods=['GET'])
 def survey():
     return redirect('https://www.surveymonkey.com/r/2W9XQDK',
