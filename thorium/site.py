@@ -23,5 +23,5 @@ def survey():
 
 @site.route('/facebook', methods=['GET'])
 def facebook():
-    return redirect('https://www.facebook.com/Thorium-Brewing-1716310635254042/',
+    return redirect('https://www.facebook.com/thorium.beer/',
                     code=301)
