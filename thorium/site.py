@@ -20,3 +20,8 @@ def about_us():
 def survey():
     return redirect('https://www.surveymonkey.com/r/2W9XQDK',
                     code=301)
+
+@site.route('/facebook', methods=['GET'])
+def facebook():
+    return redirect('https://www.facebook.com/Thorium-Brewing-1716310635254042/',
+                    code=301)
