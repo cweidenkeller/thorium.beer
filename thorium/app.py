@@ -4,6 +4,8 @@ from thorium.site import site
 
 app = Flask(__name__)
 app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:////home/thorium/thorium.db'
+db = SQLAlchemy(app)
+from thorium.site import site
 app.register_blueprint(site)
 
 @app.errorhandler(404)

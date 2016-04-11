@@ -1,7 +1,4 @@
-from flask_sqlalchemy import SQLAlchemy
-from thorium.app import app
-
-db = SQLAlchemy(app)
+from thorium.app import db
 
 class Beer(db.Model):
     id = db.Column(db.Integer, primary_key=True, autoincrement=True)
