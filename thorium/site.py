@@ -1,5 +1,5 @@
-from flask import Blueprint, render_template, redirect
-
+from flask import Blueprint, render_template, redirect, abort
+from thorium.db import Beer
 
 site = Blueprint('thorium', __name__,
                  template_folder='templates')
@@ -8,9 +8,12 @@ site = Blueprint('thorium', __name__,
 def index():
     return render_template('index.html')
 
-@site.route('/beer/<beer_name>', methods=['GET'])
-def beer(beer_name):
-    return render_template('beer.html', beer_name=beer_name)
+@site.route('/beer/<url_name>', methods=['GET'])
+def beer(url_name):
+    beer = Beer.query.filter_by(url_name=url_name).first_or_404()
+    return render_template('beer.html', name=beer.name, style=beer.style,
+                           abv=beer.abv, ibu=beer.ibu srm=beer.srm,
+                           description=beer.description)
 
 @site.route('/about_us', methods=['GET'])
 def about_us():
