@@ -1,4 +1,4 @@
-from thorium.app import db
+from thorium.db import db
 
 class Beer(db.Model):
     id = db.Column(db.Integer, primary_key=True, autoincrement=True)
