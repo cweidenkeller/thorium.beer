@@ -12,7 +12,7 @@ def index():
 def beer(url_name):
     beer = Beer.query.filter_by(url_name=url_name).first_or_404()
     return render_template('beer.html', name=beer.name, style=beer.style,
-                           abv=beer.abv, ibu=beer.ibu srm=beer.srm,
+                           abv=beer.abv, ibu=beer.ibu, srm=beer.srm,
                            description=beer.description)
 
 @site.route('/about_us', methods=['GET'])
