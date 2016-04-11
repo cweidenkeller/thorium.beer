@@ -14,11 +14,11 @@ class Beer(db.Model):
         self.url_name = url_name
         self.name = name
         self.style = style
-        self.description = description
         self.abv = abv
         self.ibu = ibu
         self.srm = srm
+        self.description = description
 
     def __repr__(self):
-        return '<Beer {0}'.format(self.name)
+        return '<Beer {0}>'.format(self.name)
 
