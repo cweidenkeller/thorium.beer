@@ -1,5 +1,5 @@
 from flask import Blueprint, render_template, redirect, abort
-from thorium.db import Beer
+from thorium.models import Beer
 
 site = Blueprint('thorium', __name__,
                  template_folder='templates')
