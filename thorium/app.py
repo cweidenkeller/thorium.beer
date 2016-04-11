@@ -12,3 +12,4 @@ app.register_blueprint(site)
 def page_not_found(error):
     return "PAGE NOT FOUND", 404
 db.init_app(app)
+db.create_all()
