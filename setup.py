@@ -7,7 +7,7 @@ setup(
     scripts=[],
     include_package_data=True,
     zip_safe=False,
-    install_requires=['Flask==0.10.1'],
+    install_requires=['Flask==0.10.1', 'Flask-SQLAlchemy==2.1'],
     entry_points={'console_scripts' : ['thorium = thorium.run:run']},
     author="Thorium",
     author_email="info@thorium.beer",
